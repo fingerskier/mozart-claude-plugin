@@ -1,0 +1,42 @@
+{
+  "name": "mozart-claude-plugin",
+  "version": "2026.2.15",
+  "description": "MIDI plugin for Claude Code — load, analyze, edit, and play MIDI files with musical intelligence",
+  "type": "module",
+  "bin": {
+    "mozart-claude": "bin/mozart-claude.js"
+  },
+  "files": [
+    ".claude-plugin/",
+    ".mcp.json",
+    "mcp-servers.json",
+    "skills/",
+    "bin/",
+    "src/"
+  ],
+  "scripts": {
+    "start": "node bin/mozart-claude.js mcp",
+    "release": "npm version patch && git push && git push --tags && npm publish"
+  },
+  "keywords": [
+    "claude-code-plugin",
+    "midi",
+    "music",
+    "mcp",
+    "composition",
+    "player"
+  ],
+  "author": {
+    "name": "Fingerskier"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@tonejs/midi": "^2.0.28",
+    "midi-writer-js": "^3.1.1",
+    "zod": "^3.24.2"
+  }
+}

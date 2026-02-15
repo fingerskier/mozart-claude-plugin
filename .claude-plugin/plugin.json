@@ -1,0 +1,9 @@
+{
+  "name": "mozart",
+  "version": "2026.2.15",
+  "description": "MIDI plugin for Claude Code — load, analyze, edit, and play MIDI files with musical intelligence",
+  "author": { "name": "Fingerskier" },
+  "license": "MIT",
+  "keywords": ["midi", "music", "composition", "player", "mcp"],
+  "mcpServers": "./mcp-servers.json"
+}
